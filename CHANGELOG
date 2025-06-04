@@ -1,0 +1,32 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.0] - 2025-06-05
+
+### Added
+
+- Initial release of oh-my-zsh-alembic plugin
+- Command aliases for all major Alembic commands
+- Tab completion for Alembic commands and options
+- Helper functions:
+  - `alup-head` - Upgrade to head revision
+  - `alrev-m` - Create revision with message
+  - `alrev-auto` - Create auto-generated revision
+  - `aldown-1` - Downgrade by one revision
+  - `alhist-v` - Show verbose history
+  - `alembic-status` - Show comprehensive status
+  - `alembic-init` - Initialize Alembic with guidance
+- Support for Alembic 1.16.1
+- Comprehensive documentation
+- MIT License
+
+### Features
+
+- 12 command aliases for faster workflow
+- Context-aware tab completion
+- Status overview functions
+- Initialization helpers
