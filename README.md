@@ -128,8 +128,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [oh-my-zsh](https://ohmyz.sh/) - Framework for managing Zsh configuration
 - The Zsh completion system documentation
 
----
-
 **Note**: This plugin is not officially affiliated with Alembic or SQLAlchemy.
 
 ## Authors
