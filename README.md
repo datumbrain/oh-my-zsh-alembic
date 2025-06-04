@@ -19,7 +19,7 @@ A comprehensive oh-my-zsh plugin for [Alembic](https://alembic.sqlalchemy.org/),
 1. Clone this repository into your oh-my-zsh custom plugins directory:
 
    ```bash
-   git clone https://github.com/yourusername/oh-my-zsh-alembic.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/alembic
+   git clone https://github.com/datumbrain/oh-my-zsh-alembic.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/alembic
    ```
 
 2. Add `alembic` to your plugins list in `~/.zshrc`:
