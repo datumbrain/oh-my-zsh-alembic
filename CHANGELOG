@@ -5,6 +5,64 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2025-06-05
+
+### Added
+
+- **Enhanced autocompletion system** with comprehensive flag support for all Alembic commands
+- **Dynamic revision ID completion** - suggests actual revision IDs from project history
+- **Template-aware completion** for `init` command (generic, multidb, async, pyproject)
+- **Global options support** for all commands (`-c/--config`, `-n/--name`, `-x`, `--raiseerr`, `-q/--quiet`)
+- **New command aliases**:
+  - `alinit` - Initialize Alembic environment
+  - `alensure` - Create Alembic version table
+  - `allist` - List available templates
+  - `alcheck` - Check for pending upgrade operations (Alembic 1.9.0+)
+- **Interactive helper functions**:
+  - `alembic-help` - Enhanced help with visual formatting and pro tips
+  - `alembic-create` - Interactive revision creation wizard with prompts
+  - `alembic-diff` - Compare revisions with git-style diff output
+- **Enhanced status function** with visual indicators (✅❌🔧📝) and better formatting
+- **Enhanced initialization function** with template selection and guidance
+- **Smart completion contexts** - different completion behavior based on command type
+
+### Enhanced
+
+- **Complete flag coverage** for all 15 Alembic commands:
+  - `revision`: `--autogenerate`, `--sql`, `--head`, `--splice`, `--branch-label`, `--version-path`, `--rev-id`, `--depends-on`
+  - `upgrade`/`downgrade`: `--sql`, `--tag`, revision targeting
+  - `stamp`: `--sql`, `--tag`, `--purge`, revision targeting
+  - `merge`: `--rev-id`, `--message`, `--branch-label`
+  - `history`: `--rev-range`, `--verbose`, `--indicate-current`
+  - `heads`/`branches`: `--verbose`, `--resolve-dependencies`
+  - `init`: `--template`, `--package` with directory completion
+  - All commands: global options support
+- **Improved user experience**:
+  - Visual status indicators and emoji for better readability
+  - Comprehensive error handling with helpful next-step suggestions
+  - Interactive modes for complex operations
+  - Pro tips and usage guidance in help function
+- **Advanced completion features**:
+  - Context-aware suggestions based on command and position
+  - File and directory path completion where appropriate
+  - Revision identifier validation and suggestions
+  - Template name validation for init operations
+
+### Technical Improvements
+
+- **Modular completion architecture** with separate functions for different completion types
+- **Performance optimizations** in revision ID lookup and caching
+- **Error handling** for missing Alembic installations or invalid project states
+- **Cross-platform compatibility** improvements for path handling
+- **Memory efficient** completion with lazy loading of revision data
+
+### Documentation
+
+- **Comprehensive inline documentation** with detailed parameter descriptions
+- **Usage examples** embedded in completion descriptions
+- **Pro tips section** in help function covering advanced workflows
+- **Command mapping reference** showing all aliases and their targets
+
 ## [1.0.0] - 2025-06-05
 
 ### Added
