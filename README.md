@@ -2,7 +2,9 @@
 
 A comprehensive oh-my-zsh plugin for [Alembic](https://alembic.sqlalchemy.org/), the database migration tool for SQLAlchemy.
 
-![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3E0bWQwMHZmZ29lMWkzN2lrNjZmMjJuaTE5eG9zeXE2bzJuZ2tpcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MRpYpP8DiBvkYmw6ir/giphy.gif)
+<div align="center">
+  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExazU0ZTZ4N2x0dnBwY25tdGRrZmEyb3NpMG0yd2cyYzd6M2dmM2FocSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MWvaRt5DJraCxLoZSD/giphy.gif"/>
+</div>
 
 ## Features
 
